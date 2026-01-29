@@ -2,9 +2,6 @@ import { EDUCATION, CERTIFICATIONS } from "../constants";
 import { motion } from "framer-motion";
 
 const Education: React.FC = () => {
-  const handleLinkClick = (url: string) => {
-    window.open(url, "_blank");
-  };
 
   const container = (delay: number) => ({
     hidden: { x: -100, opacity: 0 },
