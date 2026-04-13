@@ -1,20 +1,37 @@
 
 
-export const HERO_CONTENT = `Hey, I'm Shynitha! I'm a  software engineer who enjoys building reliable, scalable systems using Python, FastAPI, Django, and modern frontend frameworks like React and Angular.
+// export const HERO_CONTENT = `Hey, I'm Shynitha! I'm a  software engineer who enjoys building reliable, scalable systems using Python, FastAPI, Django, and modern frontend frameworks like React and Angular.
 
-I've worked across diverse domains, from telecommunications and healthcare to education, e-commerce, and government research, turning complex data and workflows into clean, production-ready applications.
+// I've worked across diverse domains, from telecommunications and healthcare to education, e-commerce, and government research, turning complex data and workflows into clean, production-ready applications.
 
-When I’m not coding, you’ll usually find me reading books, playing badminton, or experimenting with new tech just for fun. I’m always learning, always building, and I genuinely enjoy solving problems that make systems (and lives) a little better.`;
+// When I’m not coding, you’ll usually find me reading books, playing badminton, or experimenting with new tech just for fun. I’m always learning, always building, and I genuinely enjoy solving problems that make systems (and lives) a little better.`;
 
-export const ABOUT_TEXT = `Hi! I’m Shynitha, a software engineer with a strong backend foundation and a deep curiosity for how systems, data, and ideas connect.
+// export const ABOUT_TEXT = `Hi! I’m Shynitha, a software engineer with a strong backend foundation and a deep curiosity for how systems, data, and ideas connect.
 
-I’ve worked across a wide range of industries, including telecommunications, healthcare, education, e-commerce, and government-backed research initiatives like the NSF, often dealing with complex datasets (including USDA data) and transforming legacy systems into scalable, cloud-ready platforms.
+// I’ve worked across a wide range of industries, including telecommunications, healthcare, education, e-commerce, and government-backed research initiatives like the NSF, often dealing with complex datasets (including USDA data) and transforming legacy systems into scalable, cloud-ready platforms.
 
-My technical strengths lie in Python, FastAPI, Django, SQL, and backend system design, with hands-on experience building user-facing interfaces using React, Angular, and Next.js. Recently, I’ve been exploring agentic AI workflows, designing OCR → LLM → validation pipelines that push AI features beyond demos and into production.
+// My technical strengths lie in Python, FastAPI, Django, SQL, and backend system design, with hands-on experience building user-facing interfaces using React, Angular, and Next.js. Recently, I’ve been exploring agentic AI workflows, designing OCR → LLM → validation pipelines that push AI features beyond demos and into production.
 
-Outside of work, I love reading, playing badminton, and following my curiosity wherever it leads. I’m the kind of person who enjoys googling small questions and then diving deep, whether that’s learning about a movie star’s journey, understanding a new LLM architecture, or reading up on market trends. That habit of exploration shapes how I learn, think, and build.
+// Outside of work, I love reading, playing badminton, and following my curiosity wherever it leads. I’m the kind of person who enjoys googling small questions and then diving deep, whether that’s learning about a movie star’s journey, understanding a new LLM architecture, or reading up on market trends. That habit of exploration shapes how I learn, think, and build.
 
-I’m always excited to learn, grow, collaborate, and build things that make an impact (and are fun to work on too).`;
+// I’m always excited to learn, grow, collaborate, and build things that make an impact (and are fun to work on too).`;
+export const HERO_CONTENT = `Hey, I'm Shynitha! I'm a data and software engineer who enjoys building reliable backend systems and data-driven applications using Python, SQL, and modern web technologies.
+
+I work on turning messy, real-world data into structured, production-ready systems, from ingestion and validation to APIs and analytics-ready outputs.
+
+Lately, I’ve also been exploring AI-driven workflows, using LLMs to extract and transform semi-structured data into meaningful insights.
+
+When I’m not coding, you’ll find me reading, playing badminton, or going down rabbit holes learning something new.`;
+
+export const ABOUT_TEXT = `Hi! I’m Shynitha, a data and software engineer with a strong backend foundation and a focus on building scalable, reliable systems.
+
+I’ve worked on designing data ingestion and processing pipelines that transform complex datasets into structured formats used by applications and analytics workflows. My experience spans backend API development, database optimization, and building systems that support real-world decision making.
+
+Technically, I work primarily with Python, Django, FastAPI, SQL, and relational databases like PostgreSQL and MySQL. I’ve also deployed and operated systems on AWS, focusing on performance, reliability, and maintainability.
+
+More recently, I’ve been working with AI-driven workflows, building pipelines that use LLMs to extract, structure, and validate data from semi-structured sources like PDFs and HTML.
+
+I enjoy solving messy problems, improving systems over time, and building things that actually get used.`;
 
 export interface Experience {
   year: string;
@@ -42,31 +59,76 @@ export const EXPERIENCES: Experience[] = [
   {
     year: "Jun 2025 – Present",
     role: "Software Engineer",
-    company: "National Science Foundation (NSF), Raleigh, NC",
-    description: `Co-built an agentic AI ingestion pipeline orchestrating OCR, LLM extraction, validation, and reconciliation across multiple data sources. Modernized a legacy ColdFusion backend by rebuilding core services in Django REST Framework, improving reliability during peak data-import cycles. Migrated frontend workflows to Angular with reusable components and better client-side validation, reducing UI-related issues. Optimized high-traffic database queries and delivered a real-time typeahead search system, significantly improving performance and user experience.`,
-    technologies: ["Python", "Django", "FastAPI", "Angular", "SQL Server", "PostgreSQL", "LLMs", "OCR", "AWS"],
+    company: "National Science Foundation (NSF)",
+    // description: `Co-built an agentic AI ingestion pipeline orchestrating OCR, LLM extraction, validation, and reconciliation across multiple data sources. Modernized a legacy ColdFusion backend by rebuilding core services in Django REST Framework, improving reliability during peak data-import cycles. Migrated frontend workflows to Angular with reusable components and better client-side validation, reducing UI-related issues. Optimized high-traffic database queries and delivered a real-time typeahead search system, significantly improving performance and user experience.`,
+    description: `Built a data ingestion and processing platform to aggregate datasets from multiple external sources and transform them into structured, analytics-ready formats. Integrated AI-driven workflows to extract structured data from semi-structured inputs like PDFs and HTML.
+
+Developed backend services using Django REST Framework for ingestion, validation, and API delivery. Designed and optimized SQL queries, improving performance by ~25%.
+
+Implemented validation, reconciliation, and error-handling logic to ensure data consistency and reliability across the system.`,
+    technologies: [
+  "Python",
+  "Django REST Framework",
+  "SQL",
+  "PostgreSQL",
+  "Data Ingestion",
+  "ETL Pipelines",
+  "LLMs",
+  "OCR",
+  "AWS"
+],
   },
   {
     year: "Oct 2023 – May 2025",
-    role: "Software Engineer",
-    company: "North Carolina State University, Raleigh, NC",
-    description: `Rebuilt a legacy departmental website into a modern Next.js application with a Python backend, improving page load performance and long-term maintainability. Refactored server-side logic into modular services with structured validation and logging. Migrated MySQL workloads to PostgreSQL, optimized slow queries, and implemented CI/CD pipelines using Jenkins and Apache Tomcat to streamline deployments.`,
-    technologies: ["Python", "Next.js", "React", "PostgreSQL", "MySQL", "Jenkins", "CI/CD", "SSR/ISR"],
+    role: "Data Engineer",
+    company: "North Carolina State University",
+    // description: `Rebuilt a legacy departmental website into a modern Next.js application with a Python backend, improving page load performance and long-term maintainability. Refactored server-side logic into modular services with structured validation and logging. Migrated MySQL workloads to PostgreSQL, optimized slow queries, and implemented CI/CD pipelines using Jenkins and Apache Tomcat to streamline deployments.`,
+    description: `Designed and operated Python-based data services on AWS EC2 with PostgreSQL (RDS/Aurora), modernizing legacy systems into structured, analytics-ready pipelines.
+
+Refactored monolithic workflows into modular ETL pipelines (extract → validate → transform → load), improving maintainability and data quality.
+
+Migrated MySQL workloads to PostgreSQL and optimized high-throughput queries, improving performance by ~35%.`,
+    technologies: [
+  "Python",
+  "PostgreSQL",
+  "MySQL",
+  "AWS EC2",
+  "Amazon RDS",
+  "Aurora",
+  "ETL Pipelines",
+  "Data Modeling",
+  "CI/CD"
+],
   },
   {
     year: "Mar 2022 – Aug 2023",
-    role: "Senior Associate Software Engineer",
+    role: "Data Engineer",
     company: "AT&T, Hyderabad, India",
-    description: `Developed and maintained internal enterprise applications using Python (FastAPI) and React, supporting large-scale provisioning and billing workflows. Optimized high-volume PL/SQL queries and backend data-access layers to improve system reliability during peak traffic. Led and mentored interns on API design, clean architecture, and Git workflows, and owned the end-to-end development of an internal assessment platform deployed on AWS.`,
-    technologies: ["Python", "FastAPI", "React", "PL/SQL", "AWS", "CI/CD", "REST APIs"],
+    // description: `Developed and maintained internal enterprise applications using Python (FastAPI) and React, supporting large-scale provisioning and billing workflows. Optimized high-volume PL/SQL queries and backend data-access layers to improve system reliability during peak traffic. Led and mentored interns on API design, clean architecture, and Git workflows, and owned the end-to-end development of an internal assessment platform deployed on AWS.`,
+    description: `Engineered and supported enterprise-scale data pipelines processing high-volume operational data for provisioning and billing systems.
+
+Developed backend services using FastAPI to orchestrate batch and API-driven ingestion workflows. Optimized large-scale SQL queries, reducing processing time by ~30%.
+
+Deployed data services on AWS EC2 with MySQL (RDS) and S3 for large-scale data handling.`,
+    technologies: [
+  "Python",
+  "FastAPI",
+  "SQL",
+  "MySQL",
+  "AWS EC2",
+  "S3",
+  "Data Pipelines",
+  "Batch Processing",
+  "REST APIs"
+],
   },
-  {
-    year: "Sep 2020 – Mar 2022",
-    role: "Full Stack Developer",
-    company: "Food Parrot, Hyderabad, India",
-    description: `Worked in a fast-paced startup environment building frontend features with React and integrating backend APIs using Node.js. Developed reusable UI components for product discovery and ordering flows, and collaborated closely with the founding team to ship features quickly. Improved application responsiveness by identifying performance bottlenecks and optimizing frontend and API interactions.`,
-    technologies: ["React", "JavaScript", "Node.js", "REST APIs", "Startup Environment"],
-  },
+  // {
+  //   year: "Sep 2020 – Mar 2022",
+  //   role: "Full Stack Developer",
+  //   company: "Food Parrot, Hyderabad, India",
+  //   description: `Worked in a fast-paced startup environment building frontend features with React and integrating backend APIs using Node.js. Developed reusable UI components for product discovery and ordering flows, and collaborated closely with the founding team to ship features quickly. Improved application responsiveness by identifying performance bottlenecks and optimizing frontend and API interactions.`,
+  //   technologies: ["React", "JavaScript", "Node.js", "REST APIs", "Startup Environment"],
+  // },
 ];
 
 
@@ -89,7 +151,7 @@ export const PROJECTS: Project[] = [
     description:
       "Created a price comparison tool that scrapes product prices from multiple e-commerce websites, compares them in real time, and highlights the lowest available price for users. Built an interactive frontend to provide a simple and intuitive shopping experience.",
     technologies: ["Python", "JavaScript", "Web Scraping", "HTML", "CSS"],
-    github:"hhttps://github.com/shyni0201/Cheapbuy",
+    github:"https://github.com/shyni0201/Cheapbuy",
   },
 
    {
@@ -124,16 +186,24 @@ export const CONTACT: Contact = {
   github: "https://github.com/shyni0201",
 };
 
+// export const SKILLS = {
+//   "Programming Languages": ["Python", "JavaScript/TypeScript", "Go", "Java", "C/C++", "HTML5", "CSS3", "Bash/Shell Scripting"],
+//   "Frontend Development": ["React", "Next.js (SSR/ISR)", "Tailwind CSS", "Bootstrap", "Redux", "Figma"],
+//   "Backend and APIs": ["FastAPI", "Flask", "Django", "Node.js", "GraphQL", "REST", "gRPC", "Celery", "Redis", "Kafka", "RabbitMQ"],
+//   "AI & Agentic Automation": ["LLMs", "LLMOps", "n8n", "Voiceflow", "RAG", "Firecrawl", "Feature Stores"],
+//   "Data & Search": ["MS Fabric Lakehouse", "PostgreSQL", "MySQL", "MongoDB", "Elasticsearch", "pandas"],
+//   "DevOps & Cloud": ["Docker", "Kubernetes", "GitHub Actions", "Jenkins", "AWS (EC2, Lambda, S3, RDS, EKS)", "Vercel"],
+//   "Security & Payments": ["OAuth2", "JWT", "Authorize.net tokenization", "Rate Limiting"],
+// };
 export const SKILLS = {
-  "Programming Languages": ["Python", "JavaScript/TypeScript", "Go", "Java", "C/C++", "HTML5", "CSS3", "Bash/Shell Scripting"],
-  "Frontend Development": ["React", "Next.js (SSR/ISR)", "Tailwind CSS", "Bootstrap", "Redux", "Figma"],
-  "Backend and APIs": ["FastAPI", "Flask", "Django", "Node.js", "GraphQL", "REST", "gRPC", "Celery", "Redis", "Kafka", "RabbitMQ"],
-  "AI & Agentic Automation": ["LLMs", "LLMOps", "n8n", "Voiceflow", "RAG", "Firecrawl", "Feature Stores"],
-  "Data & Search": ["MS Fabric Lakehouse", "PostgreSQL", "MySQL", "MongoDB", "Elasticsearch", "pandas"],
-  "DevOps & Cloud": ["Docker", "Kubernetes", "GitHub Actions", "Jenkins", "AWS (EC2, Lambda, S3, RDS, EKS)", "Vercel"],
-  "Security & Payments": ["OAuth2", "JWT", "Authorize.net tokenization", "Rate Limiting"],
+  "Languages": ["Python", "SQL", "Java"],
+  "Data Engineering": ["ETL Pipelines", "Data Ingestion", "Transformation", "Batch Processing"],
+  "Backend": ["Django REST Framework", "FastAPI", "REST APIs"],
+  "Databases": ["PostgreSQL", "MySQL", "Query Optimization", "Schema Design"],
+  "Cloud": ["AWS (EC2, RDS, Aurora, S3)"],
+  "AI & Data": ["LLMs", "NLP", "Data Extraction", "Prompt Engineering"],
+  "Practices": ["CI/CD", "Debugging", "Performance Tuning", "Data Validation"]
 };
-
 export const CERTIFICATIONS = [
   {
     name: "Microsoft Certified: Azure Fundamentals",
@@ -169,35 +239,49 @@ export const AI_EXPERIENCE = [
     role: "AI Advisor & Full-Stack Developer",
     company: "iSimcha Health",
     location: "Raleigh, NC",
-    period: "Aug 2025 – Present",
+    period: "Aug 2025 – Feb 2026",
     description: [
-      "Built a patient-facing React + TypeScript application that converts dense oncology policy documents into clear, human-readable explanations for cancer patients and caregivers.",
-      "Engineered a serverless backend using Firebase Cloud Functions, orchestrating multi-step agentic workflows (ingestion → extraction → summarization → validation → scoring) with under 2 seconds average end-to-end latency.",
-      "Designed a structured BigQuery medical-policy dataset to track model outputs, evaluation scores, and improvement cycles; optimized SQL pipelines to reduce query time by 40%.",
-      "Integrated multiple LLM providers including OpenAI, Vertex AI, and TogetherAI through a unified API layer for rapid benchmarking and A/B testing.",
-      "Implemented an LLM-as-Judge evaluation framework, reducing manual review time by 70%."
+      "Built a system to convert complex oncology policy documents into structured, human-readable outputs using LLM-based workflows.",
+      "Engineered serverless pipelines (ingestion → extraction → summarization → validation) using Firebase Cloud Functions with ~2s latency.",
+      "Designed a BigQuery dataset to track model outputs, evaluation scores, and improvement cycles; optimized queries by 40%.",
+      "Integrated multiple LLM providers (OpenAI, Vertex AI, TogetherAI) through a unified API layer for benchmarking and A/B testing.",
+      "Implemented an LLM-as-Judge evaluation framework, reducing manual review effort by 70%."
     ],
-    technologies: ["React", "TypeScript", "Firebase", "LLMs", "BigQuery", "Serverless"]
+    technologies: ["LLMs", "Firebase", "BigQuery", "Serverless", "React", "TypeScript"]
   },
   {
-    role: "Data Science & AI Intern",
-    company: "The Sparks Foundation",
-    location: "Hyderabad, India",
-    period: "Jan 2021 – Feb 2021",
+    role: "Full Stack Open Source Contributor",
+    company: "Program Earth",
+    location: "Remote",
+    period: "Jan 2026 – Present",
     description: [
-      "Completed a hands-on Data Science and Business Analytics internship focused on machine learning and exploratory problem-solving."
+      "Contributing to backend and data layer of a geospatial platform using Node.js, TypeScript, and PostgreSQL (PostGIS).",
+      "Developed APIs for dataset retrieval and search with filtering, pagination, and structured responses.",
+      "Designed and optimized SQL queries across multiple schemas to support efficient geospatial data access.",
+      "Worked with dynamic schema designs and metadata-driven dataset structures.",
+      "Improved local development workflows using Docker and seed data strategies for testing."
     ],
-    technologies: ["Python", "Machine Learning"]
-  },
-  {
-    role: "Machine Learning Intern",
-    company: "Goal Street",
-    location: "Hyderabad, India",
-    period: "May 2020 – Jul 2020",
-    description: [
-      "Built a refurbished car price prediction model achieving 93% accuracy using XGBoost on structured vehicle data."
-    ],
-    technologies: ["Python", "XGBoost"]
+    technologies: ["Node.js", "TypeScript", "PostgreSQL", "PostGIS", "Docker", "APIs"]
   }
+  // {
+  //   role: "Data Science & AI Intern",
+  //   company: "The Sparks Foundation",
+  //   location: "Hyderabad, India",
+  //   period: "Jan 2021 – Feb 2021",
+  //   description: [
+  //     "Completed a hands-on Data Science and Business Analytics internship focused on machine learning and exploratory problem-solving."
+  //   ],
+  //   technologies: ["Python", "Machine Learning"]
+  // },
+  // {
+  //   role: "Machine Learning Intern",
+  //   company: "Goal Street",
+  //   location: "Hyderabad, India",
+  //   period: "May 2020 – Jul 2020",
+  //   description: [
+  //     "Built a refurbished car price prediction model achieving 93% accuracy using XGBoost on structured vehicle data."
+  //   ],
+  //   technologies: ["Python", "XGBoost"]
+  // }
 ];
 

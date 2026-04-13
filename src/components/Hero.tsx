@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
               animate="visible"
               className="inline-block pb-1 sm:pb-1.5 lg:pb-2 leading-[1.25] bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight text-transparent mb-4"
             >
-              Software Engineer
+              Data and Software Engineer
             </motion.span>
             
             <motion.div
@@ -63,12 +63,12 @@ const Hero: React.FC = () => {
               className="flex flex-wrap justify-center lg:justify-start gap-4 mt-6"
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-300">4+</div>
+                <div className="text-2xl font-bold text-purple-300">3+</div>
                 <div className="text-sm text-neutral-400">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-300">Full-Stack</div>
-                <div className="text-sm text-neutral-400">Developer</div>
+                <div className="text-2xl font-bold text-purple-300">Data and Software</div>
+                <div className="text-sm text-neutral-400">Engineer</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-purple-300">AI/LLM</div>

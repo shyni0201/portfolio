@@ -20,7 +20,7 @@ const AIExperience: React.FC = () => {
           animate="visible"
           className="pb-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin tracking-tight"
         >
-          AI Innovation & Applied Experience
+          AI Innovation & Open Source Contribution
         </motion.h2>
 
         <motion.div

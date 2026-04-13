@@ -54,6 +54,10 @@ const About: React.FC = () => {
               className="flex flex-wrap justify-center lg:justify-start gap-4 mt-6"
             >
               <div className="text-center">
+                <div className="text-2xl font-bold text-purple-300">Data</div>
+                <div className="text-sm text-neutral-400">Engineer</div>
+              </div>
+              <div className="text-center">
                 <div className="text-2xl font-bold text-purple-300">Full-Stack</div>
                 <div className="text-sm text-neutral-400">Expert</div>
               </div>
@@ -61,10 +65,10 @@ const About: React.FC = () => {
                 <div className="text-2xl font-bold text-purple-300">AI/LLM</div>
                 <div className="text-sm text-neutral-400">Specialist</div>
               </div>
-              <div className="text-center">
+              {/* <div className="text-center">
                 <div className="text-2xl font-bold text-purple-300">University</div>
                 <div className="text-sm text-neutral-400">Researcher</div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
