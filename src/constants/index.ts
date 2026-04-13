@@ -212,6 +212,12 @@ export const CERTIFICATIONS = [
     date: "Jul 2023",
   },
   {
+    name: "AWS Certified Solutions Architect",
+    level: "Associate",
+    issuer: "Amazon Web Services",
+    date: "June 2024",
+  },
+  {
     name: "Getting Started with Deep Learning",
     level: "Associate",
     issuer: "NVIDIA",
